@@ -10,6 +10,7 @@ import { MenuLateralComponent } from './barra-navegacao/menu-lateral/menu-latera
 import { ResumoComponent } from './resumo/resumo.component';
 import { ConsultaComponent } from './consulta/consulta.component';
 import { ConsultaPorEspecialidadeComponent } from './consulta/consulta-por-especialidade/consulta-por-especialidade.component';
+import { AppRoutingModuleModule} from './app-routing-module/app-routing-module.module';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { ConsultaPorEspecialidadeComponent } from './consulta/consulta-por-espec
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    AppRoutingModuleModule
   ],
   providers: [],
   bootstrap: [AppComponent]
