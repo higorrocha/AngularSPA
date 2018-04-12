@@ -6,12 +6,14 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { PainelSimplesComponent } from './painel-simples/painel-simples.component';
 import { BarraNavegacaoComponent } from './barra-navegacao/barra-navegacao.component';
+import { MenuLateralComponent } from './menu-lateral/menu-lateral.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PainelSimplesComponent,
-    BarraNavegacaoComponent
+    BarraNavegacaoComponent,
+    MenuLateralComponent
   ],
   imports: [
     BrowserModule,
