@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { PainelSimplesComponent } from './painel-simples/painel-simples.component';
@@ -11,6 +12,7 @@ import { ResumoComponent } from './resumo/resumo.component';
 import { ConsultaComponent } from './consulta/consulta.component';
 import { ConsultaPorEspecialidadeComponent } from './consulta/consulta-por-especialidade/consulta-por-especialidade.component';
 import { AppRoutingModuleModule} from './app-routing-module/app-routing-module.module';
+import { ResumoService } from './resumo/resumo.service';
 
 @NgModule({
   declarations: [
@@ -26,9 +28,10 @@ import { AppRoutingModuleModule} from './app-routing-module/app-routing-module.m
     BrowserModule,
     FormsModule,
     HttpModule,
+    HttpClientModule,
     AppRoutingModuleModule
   ],
-  providers: [],
+  providers: [ResumoService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
