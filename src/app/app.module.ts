@@ -13,6 +13,7 @@ import { ConsultaComponent } from './consulta/consulta.component';
 import { ConsultaPorEspecialidadeComponent } from './consulta/consulta-por-especialidade/consulta-por-especialidade.component';
 import { AppRoutingModuleModule} from './app-routing-module/app-routing-module.module';
 import { ResumoService } from './resumo/resumo.service';
+import { ConsultaService } from './consulta/consulta.service';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,7 @@ import { ResumoService } from './resumo/resumo.service';
     HttpClientModule,
     AppRoutingModuleModule
   ],
-  providers: [ResumoService],
+  providers: [ResumoService, ConsultaService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
