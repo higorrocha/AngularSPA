@@ -4,10 +4,12 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { PainelSimplesComponent } from './painel-simples/painel-simples.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PainelSimplesComponent
   ],
   imports: [
     BrowserModule,
