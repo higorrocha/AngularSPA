@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-consulta-por-especialidade',
@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ConsultaPorEspecialidadeComponent implements OnInit {
 
+  @Input() consultas;
+  @Input() titulo;
+  @Input() erro;
+
   constructor() { }
 
   ngOnInit() {
   }
 
 }
+
