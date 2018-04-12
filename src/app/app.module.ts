@@ -12,8 +12,10 @@ import { ResumoComponent } from './resumo/resumo.component';
 import { ConsultaComponent } from './consulta/consulta.component';
 import { ConsultaPorEspecialidadeComponent } from './consulta/consulta-por-especialidade/consulta-por-especialidade.component';
 import { AppRoutingModuleModule} from './app-routing-module/app-routing-module.module';
+import { FaturamentoComponent } from './faturamento/faturamento.component';
 import { ResumoService } from './resumo/resumo.service';
 import { ConsultaService } from './consulta/consulta.service';
+import { FaturamentoService } from './faturamento/faturamento.service';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,8 @@ import { ConsultaService } from './consulta/consulta.service';
     MenuLateralComponent,
     ResumoComponent,
     ConsultaComponent,
-    ConsultaPorEspecialidadeComponent
+    ConsultaPorEspecialidadeComponent,
+    FaturamentoComponent
   ],
   imports: [
     BrowserModule,
@@ -32,7 +35,7 @@ import { ConsultaService } from './consulta/consulta.service';
     HttpClientModule,
     AppRoutingModuleModule
   ],
-  providers: [ResumoService, ConsultaService],
+  providers: [ResumoService, ConsultaService, FaturamentoService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
